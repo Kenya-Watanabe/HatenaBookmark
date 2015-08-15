@@ -4,7 +4,7 @@
 			<div class="form-group col-xs-2">
 			<?php echo $this ->Form->input('category',array('type'=>'select','class'=>'form-cotroll','options'=>$subject));?>
 			<?php echo $this ->Form->input('bookmark_number',array('type'=>'select','class'=>'form-cotroll','options'=>$booknumber));?>
-			<?php echo $this->Form->submit('submit',) ?>
+			<?php echo $this->Form->submit('submit'); ?>
 			</div>
 		</div>
 			<div class="row">
