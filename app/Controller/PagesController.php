@@ -18,12 +18,13 @@ class PagesController extends AppController {
 		$booknumber = array('50'=>'50以上','100'=>'100以上','300'=>'300以上','500'=>'500以上','1000'=>'1000以上');
 				# code...
 			if($this->request->is('post')){
-					foreach ($subject as $key => $value) {
+				$category = $this->request->data["Category"]["category"];
+				$bookNumber = $this->request->data["Category"]["bookmark_number"];
 						# code..
-						if(isset($this->request->data[$key])){
-							$feed = file_get_contents("http://b.hatena.ne.jp/entrylist/".$key."?mode=rss&threshold=500");
+						if(isset($this->request->data)){
+							$feed = file_get_contents("http://b.hatena.ne.jp/entrylist/".$category."?mode=rss&threshold=".$bookNumber);
 						}
-					}
+
 			}
 
 

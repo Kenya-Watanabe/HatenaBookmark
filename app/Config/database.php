@@ -73,7 +73,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => '',
+		'password' => 'konant0820',
 		'database' => 'blog',
 		'prefix' => '',
 		'encoding' => 'utf8',
